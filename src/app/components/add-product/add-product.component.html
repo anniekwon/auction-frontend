@@ -1,0 +1,31 @@
+<form *ngIf="showAddProduct" class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="name" >Name:</label>
+        <input type="text" name="name" id="name" placeholder="Name" [(ngModel)]="name" />
+    </div>
+    <div class="form-control">
+        <label for="description">Description:</label>
+        <input type="text" name="description" id="description" placeholder="Detailed description" [(ngModel)]="description"/>
+    </div>
+    <div class="form-control form-control-check">
+        <label for="category">Category:</label>
+        <input type="radio" name="category" value="statue" [(ngModel)]="category"><label>Statue</label>
+        <input type="radio" name="category" value="painting" [(ngModel)]="category"><label>Painting</label>
+        <input type="radio" name="category" value="ornament" [(ngModel)]="category"><label>Ornament</label>
+    </div>
+    <div class="form-control">
+        <label for="price">Starting Price:</label>
+        <input type="number" name="price" id="price" placeholder="$0.00" [(ngModel)]="price"/>
+    </div>
+    <div class="form-control">
+        <label for="endDate">Bid End Date:</label>
+        <input type="date" name="endDate" id="endDate" [(ngModel)]="endDate"/>
+    </div>
+    <div class="form-control">
+        <label for="image" >Image:</label>
+        <input type="text" name="image" id="image" placeholder="Paste url for iamge" [(ngModel)]="image" />
+    </div>
+    <input type="submit" value="Save Product" class="btn btn-block" />
+</form>
+
+{{ name }}

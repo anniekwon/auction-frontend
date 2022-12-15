@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Statue of David",
+      "description": "David is a masterpiece of Renaissance sculpture, created in marble between 1501 and 1504 by the Italian artist Michaelangelo. David is a 5.17-meter marble statue of the Biblical figure David, a favored subject in the art of Florence.",
+      "category": "statue",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/%27David%27_by_Michelangelo_Fir_JBU005_denoised.jpg",
+      "price": 1000,
+      "endDate": "12/25/2022",
+      "bid": true
+    },
+    {
+      "id": 2,
+      "name": "Mona Lisa",
+      "description": "The Mona Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance, it has been described as \"the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world\"",
+      "category": "painting",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Raffaello_Sanzio_-_Portrait_of_a_Woman_-_WGA18948.jpg",
+      "price": 2000,
+      "endDate": "12/25/2022",
+      "bid": true
+    },
+    {
+      "id": 3,
+      "name": "Spirit of Ecstasy",
+      "description": "In the early 1900s, mascots and ornaments were all the rage leading to many Rolls Royce owners attaching custom-made ornaments. Rolls Royce feared some of the owners were using inappropriate ornaments so they decided to create an official ornament for their cars. The iconic forward-leaning woman with billowing clothes that we know today was sculpted in the early 1900s by Charles Robinson Sykes, a British sculptor under a noble’s patronage. ",
+      "category": "statue",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Rolls-Royce_Corniche_-_Spirit_of_Ecstasy.jpg",
+      "price": 3000,
+      "endDate": "12/25/2022",
+      "bid": false
+    },
+    {
+      "id": 4,
+      "name": "Venus De Milo",
+      "description": "The Venus de Milo is an ancient Greek sculpture that was created during the Hellenistic period, sometime between 150 and 125 BC. It is one of the most famous works of ancient Greek sculpture, having been prominently displayed at the Louvre Museum since shortly after the statue was rediscovered on the island of Milos, Greece, in 1820.",
+      "category": "statue",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Front_views_of_the_Venus_de_Milo.jpg",
+      "price": 4000,
+      "endDate": "12/25/2022",
+      "bid": true
+    },
+    {
+      "id": 5,
+      "name": "The Scream",
+      "description": "The Scream is a composition created by Norwegian artist Edvard Munch in 1893. The agonized face in the painting has become one of the most iconic images of art, seen as symbolizing the anxiety of the human condition. Munch's work, including The Scream, would go on to have a formative influence on the Expressionist movement. Munch recalled that he had been out for a walk at sunset when suddenly the setting sun's light turned the clouds \"a blood red\". He sensed an \"infinite scream passing through nature\"",
+      "category": "painting",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg",
+      "price": 5000,
+      "endDate": "01/15/2023",
+      "bid": true
+    },
+    {
+      "id": 6,
+      "name": "Gun Sight",
+      "description": "The Lincoln 'gun sight' hood emblem was seen on several Lincolns in the past, and looked just like the crosshair used to align guns and weapons to targets. Lincoln was also known for their silvery greyhound hood ornament extended at full speed, which stood to symbolise the company's \"speed and grace, and beauty and endurance.\"",
+      "category": "ornament",
+      "image": "https://www.drivespark.com/img/2014/05/15-1400152583-lincoln-car-hood-ornament-emblem-mascot.jpg",
+      "price": 6050,
+      "endDate": "02/02/2023",
+      "bid": true
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    }
+  ]
+}

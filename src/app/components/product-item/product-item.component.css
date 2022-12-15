@@ -1,0 +1,42 @@
+.task {
+    background: #f4f4f4;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    clear: both;
+    overflow: auto;
+  }
+  
+  .task.reminder {
+    border-left: 5px solid green;
+  }
+  
+  .task h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .headshot {
+    position: relative;
+    float: left;
+    display: block;
+    margin-right: 20px;
+
+  }
+
+  .headshot img {
+    display: block;
+    width: 100px;
+    height: 150px;
+    border: 2px solid #210934;
+
+    text-align: center;
+    background-color: #EFDDFD;
+  }
+
+  .detailshot {
+    display: block;
+    float: left;
+  }
