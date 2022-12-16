@@ -15,6 +15,7 @@ import { BidService } from 'src/app/services/bid.service';
 export class BidDetailComponent implements OnInit{
   bids: Bid[] = [];
   product: Product | undefined;
+  date: string;
 
   constructor(
     private route: ActivatedRoute,
@@ -26,6 +27,7 @@ export class BidDetailComponent implements OnInit{
   ngOnInit(): void {
       this.getProduct();
       this.bidService.getBids().subscribe((data) => this.bids = data);
+      this.date = new Date().toString().substring(4, 15);
   }
 
   getProduct(): void {

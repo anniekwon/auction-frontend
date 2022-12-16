@@ -7,6 +7,7 @@
         <p>{{ product.description }}</p>
         <br />
         <p>Starting Bid: ${{ product.price }}</p>
-        <p>End Bid Date: {{ product.endDate.substring(0,10) }}</p>
+        <p>End Bid Date: {{ product.endDate.substring(0,10) }} </p>
+        <p>Remaining Days to Bid: {{ diffDays }} day(s)</p>
     </div>
 </div>

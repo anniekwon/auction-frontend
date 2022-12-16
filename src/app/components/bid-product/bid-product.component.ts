@@ -8,10 +8,16 @@ import { Product } from 'src/app/Product';
 })
 export class BidProductComponent implements OnInit{
   @Input() product!: Product;
+  nowDate: number;
+  endBid: number;
+  diffDays: number;
 
   constructor() { }
 
   ngOnInit(): void {
-      
+      this.nowDate = new Date().getTime();
+      this.endBid = new Date(this.product.endDate).getTime()
+
+      this.diffDays = Math.round((this.endBid - this.nowDate)/(1000 * 3600 * 24))
   }
 }
