@@ -22,12 +22,12 @@ export class ProductService {
     return this.http.get<Product[]>(this.apiUrl)
   }
 
-  getProductBid(id: number): Observable<Product> {
+  selectProduct(id: any): Observable<Product> {
     const url = `${this.apiUrl}/${id}`;
     return this.http.get<Product>(url);
   }
   deleteProduct(product: Product): Observable<Product> {
-    const url = `${this.apiUrl}/${product.id}`;
+    const url = `${this.apiUrl}/delete/${product.id}`;
     return this.http.delete<Product>(url);
   }
   
@@ -37,6 +37,8 @@ export class ProductService {
   }
 
   addProduct(product: Product): Observable<Product> {
-    return this.http.post<Product>(this.apiUrl, product, httpOptions)
+    const url = `${this.apiUrl}/add-product`;
+    return this.http.post<Product>(url, product, httpOptions)
   }
+
 }

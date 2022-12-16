@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
 import { Product } from 'src/app/Product';
+import { Location } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -10,7 +12,11 @@ import { Product } from 'src/app/Product';
 export class ProductsComponent implements OnInit {
   products: Product[] = [];
   
-  constructor(private productService: ProductService) {
+  constructor(
+    private route: ActivatedRoute,
+    private productService: ProductService,
+    private location: Location
+  ) {
   
   }
 
@@ -29,5 +35,11 @@ export class ProductsComponent implements OnInit {
 
   addProduct(product: Product){
     this.productService.addProduct(product).subscribe((product) => this.products.push(product) );
+  }
+
+  selectProduct(product: Product) {
+    const id = this.route.snapshot.paramMap.get('id');
+    // this.productService.selectProduct(id)
+    //   .subscribe(data => this.products = data);
   }
 }

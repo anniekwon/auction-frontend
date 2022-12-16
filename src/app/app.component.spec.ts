@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'auction-redo'`, () => {
+  it(`should have as title 'auction-frontend'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('auction-redo');
+    expect(app.title).toEqual('auction-frontend');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('auction-redo app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('auction-frontend app is running!');
   });
 });

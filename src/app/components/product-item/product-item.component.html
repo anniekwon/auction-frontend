@@ -4,6 +4,7 @@
     </div>
     <div class="detailshot">
         <h3><a routerLink="/show-bids" (click)="onSelect(product)">{{ product.name }}</a><fa-icon [icon]="faTimes" [ngStyle]="{'color': 'red'}" (click)="onDelete(product)"></fa-icon></h3>
+        <p>Category: {{ product.category }}</p>
         <p>Starting Bid: ${{ product.price }}</p>
         <p>End Bid Date: {{ product.endDate.substring(0,10) }}</p>
         <p>Bid(s): {{ product.bid }}</p>

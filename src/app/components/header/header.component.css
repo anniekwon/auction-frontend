@@ -4,3 +4,9 @@ header {
     align-items: center;
     margin-bottom: 20px;
   }
+
+  img {
+    border: 5px solid #A33AF2;
+    border-radius: 20px;
+    width: 150px;
+  }
