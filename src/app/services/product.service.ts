@@ -41,4 +41,10 @@ export class ProductService {
     return this.http.post<Product>(url, product, httpOptions)
   }
 
+  getProduct(id:any): Observable<Product> {
+    const url = `${this.apiUrl}/detail/${id}`;
+    console.log(url)
+    return this.http.get<Product>(url);
+  }
+
 }

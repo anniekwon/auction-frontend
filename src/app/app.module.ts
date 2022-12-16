@@ -17,12 +17,14 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BidsComponent } from './components/bids/bids.component';
 import { BidItemComponent } from './components/bid-item/bid-item.component';
 import { BidProductComponent } from './components/bid-product/bid-product.component';
+import { BidDetailComponent } from './components/bid-detail/bid-detail.component';
 
 
 const appRoutes: Routes = [
   { path: '', component: ProductsComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'show-bids', component: BidsComponent }
+  { path: 'show-bids', component: BidsComponent },
+  { path: 'show-bids/:id', component: BidDetailComponent}
 ];
 
 @NgModule({
@@ -38,6 +40,7 @@ const appRoutes: Routes = [
     BidsComponent,
     BidItemComponent,
     BidProductComponent,
+    BidDetailComponent,
 
   ],
   imports: [

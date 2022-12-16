@@ -37,9 +37,4 @@ export class ProductsComponent implements OnInit {
     this.productService.addProduct(product).subscribe((product) => this.products.push(product) );
   }
 
-  selectProduct(product: Product) {
-    const id = this.route.snapshot.paramMap.get('id');
-    // this.productService.selectProduct(id)
-    //   .subscribe(data => this.products = data);
-  }
 }
