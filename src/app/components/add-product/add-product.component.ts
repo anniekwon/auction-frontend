@@ -51,13 +51,13 @@ export class AddProductComponent implements OnInit{
     console.log(newProduct)
     this.onAddProduct.emit(newProduct);
 
-    this.name = ""
-    this.description = ""
-    this.category = ""
-    this.image = ""
-    this.price = 0
-    this.endDate = ""
-    this.bid = false
+    // this.name = ""
+    // this.description = ""
+    // this.category = ""
+    // this.image = ""
+    // this.price = 0
+    // this.endDate = ""
+    // this.bid = false
 
   }
 
