@@ -1,6 +1,6 @@
 export interface Bid {
 
-        id?: number,
+        id?: Object,
         bidAmount: number,
         firstName: string,
         email: string,

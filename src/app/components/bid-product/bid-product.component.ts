@@ -19,5 +19,7 @@ export class BidProductComponent implements OnInit{
       this.endBid = new Date(this.product.endDate).getTime()
 
       this.diffDays = Math.round((this.endBid - this.nowDate)/(1000 * 3600 * 24))
+
+      if(this.diffDays < 0) this.diffDays = 0;
   }
 }

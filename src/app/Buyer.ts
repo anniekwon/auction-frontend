@@ -1,5 +1,5 @@
 export interface Buyer {
-    id?: Number
+    id?: Object
     firstName: string,
     lastName: string,
     address: string,

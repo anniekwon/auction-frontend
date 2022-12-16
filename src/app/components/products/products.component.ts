@@ -25,7 +25,7 @@ export class ProductsComponent implements OnInit {
   }
 
   deleteProduct(product: Product) {
-    this.productService.deleteProduct(product).subscribe(() => this.products = this.products.filter( p => p.id !== product.id));
+    this.productService.deleteProduct(product).subscribe(() => this.products = this.products.filter( p => p._id !== product._id));
   }
 
   toggleBid(product: Product) {

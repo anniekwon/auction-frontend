@@ -27,12 +27,12 @@ export class ProductService {
     return this.http.get<Product>(url);
   }
   deleteProduct(product: Product): Observable<Product> {
-    const url = `${this.apiUrl}/delete/${product.id}`;
+    const url = `${this.apiUrl}/delete/${product._id}`;
     return this.http.delete<Product>(url);
   }
   
   updateProductBid(product: Product): Observable<Product> {
-    const url = `${this.apiUrl}/${product.id}`;
+    const url = `${this.apiUrl}/${product._id}`;
     return this.http.patch<Product>(url, product, httpOptions)
   }
 
