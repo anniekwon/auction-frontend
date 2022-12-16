@@ -1,9 +1,11 @@
 export interface Bid {
 
         id?: number,
+        bidAmount: number,
+        firstName: string,
         email: string,
-        productId: string,
-        bidAmount: number
+        phone: string
+
     
     
 }

@@ -1,1 +1,11 @@
-<p>bid-product works!</p>
+<div class="task">
+    <div class="headshot">
+        <img src="{{ product.image }}" alt="{{ product.name }}"/>
+    </div>
+    <div class="detailshot">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p>Starting Bid: ${{ product.price }}</p>
+        <p>End Bid Date: {{ product.endDate.substring(0,10) }}</p>
+    </div>
+</div>
