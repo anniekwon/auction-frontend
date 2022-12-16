@@ -3,4 +3,9 @@
     <app-bid-product
         [product]="product"
     ></app-bid-product>
+
+    <app-bid-item
+        *ngFor="let bid of bids"
+        [bid]="bid"
+    ></app-bid-item>
 </div>

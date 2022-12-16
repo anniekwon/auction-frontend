@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { BidService } from 'src/app/services/bid.service';
 import { Bid } from 'src/app/Bid';
-import { Buyer } from 'src/app/Buyer';
 import { Product } from 'src/app/Product'
 import { BidproductService } from 'src/app/services/bidproduct.service';
-import { BidProductComponent } from '../bid-product/bid-product.component';
 
 @Component({
   selector: 'app-bids',
