@@ -1,12 +1,18 @@
-<app-bid-product
-    *ngFor="let product of products"
-    [product]="product"
-></app-bid-product>
-<app-bid-item
-    *ngFor="let bid of bids"
-    [bid]="bid"
-></app-bid-item>
-<app-bid-buyer
-    *ngFor="let buyer of buyers"
-    [buyer]="buyer"
-></app-bid-buyer>
+<div class="box">
+    <app-bid-product
+        *ngFor="let product of products"
+        [product]="product"
+    ></app-bid-product>
+</div>
+<div class="box">
+    <h2>Bids</h2>
+    <div class="col">Bid Amount</div>
+    <div class="col">First Name</div>
+    <div class="col">Email Address</div>
+    <div class="col">Mobile Number</div>
+    
+    <app-bid-item
+        *ngFor="let bid of bids"
+        [bid]="bid"
+    ></app-bid-item>
+</div>

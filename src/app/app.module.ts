@@ -17,7 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BidsComponent } from './components/bids/bids.component';
 import { BidItemComponent } from './components/bid-item/bid-item.component';
 import { BidProductComponent } from './components/bid-product/bid-product.component';
-import { BidBuyerComponent } from './components/bid-buyer/bid-buyer.component';
+
 
 const appRoutes: Routes = [
   { path: '', component: ProductsComponent },
@@ -38,7 +38,7 @@ const appRoutes: Routes = [
     BidsComponent,
     BidItemComponent,
     BidProductComponent,
-    BidBuyerComponent
+
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,10 @@
-.tblock {
-    width: 25%;
+.col {
+    width: 20%;
+    margin: 2%;
     float: left;
+    display: inline-flex;
+}
+
+.box {
+    margin-bottom: 20px;
 }
